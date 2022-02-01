@@ -13,7 +13,7 @@ const Header = () => {
         navigate('/')
     }
 
-   
+
 
     const isUserLogin = localStorage.getItem("currentUser");
 
@@ -21,7 +21,7 @@ const Header = () => {
     return (
         <div className="ui secondary pointing menu">
             {isUserLogin ? <Link href="/" className="item">
-                <button onClick={navigateHandler}>Logout</button>
+                <button className="ui button" onClick={navigateHandler}>Logout</button>
             </Link> : <Link href="/" className="item">
                 LoginPage
             </Link>}
